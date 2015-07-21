@@ -5,6 +5,7 @@
 	"files": [
 		"artifact.ts",
 		"hero.ts",
-		"pool.ts"
+		"pool.ts",
+		"die.ts"
 	]
 }

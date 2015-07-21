@@ -1,3 +1,4 @@
+/// <reference path="references.ts" />
 
 enum Face {SPAWNx1, MOVEx1, ATKx1, DEFx1, SPEx1, MATx1,
           SPAWNx2, MOVEx2, ATKx2, DEFx2, SPEx2, MATx2,
@@ -7,7 +8,7 @@ enum Face {SPAWNx1, MOVEx1, ATKx1, DEFx1, SPEx1, MATx1,
 class Die{
   
   private _faces: Face[];
-  //private Artifact;
+  private _artifact: Artifact;
   
   constructor(){
     this._faces = undefined;
