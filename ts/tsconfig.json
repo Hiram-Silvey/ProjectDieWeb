@@ -6,6 +6,12 @@
 		"artifact.ts",
 		"hero.ts",
 		"pool.ts",
-		"die.ts"
+		"die.ts",
+		"visibleClass.ts",
+		"visibleInterface.ts",
+		"core.ts",
+		"space.ts",
+		"platform.ts",
+		"grid.ts"
 	]
 }

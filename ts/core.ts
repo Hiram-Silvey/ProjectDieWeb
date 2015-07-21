@@ -1,5 +1,6 @@
 /// <reference path="references.ts" />
-class core extends visableClass implements visibleInterface{
+
+class Core extends VisableClass implements VisibleInterface{
 	private _health: number;
 	private _tokens: number[];
 	private _pool: Pool;
