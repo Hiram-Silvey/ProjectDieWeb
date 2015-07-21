@@ -10,20 +10,18 @@ class Die{
   private _faces: Face[];
   private _artifact: Artifact;
   
-  constructor(){
-    this._faces = undefined;
+  constructor(faces: Face[] = undefined, artifact: Artifact = undefined){
+    this._faces = faces;
+    this._artifact = artifact;
   }
   
   getFaces(): Face[]{
     return this._faces;
   }
   
-  setFaces(faces: Face[]){
-    this._faces = faces;
+  getArtifact(): Artifact{
+    return this._artifact;
   }
-  
-  //get Artifact
-  //set Artifact
   
   private randInt(min: number, max: number): number{
     return Math.floor(Math.random()*(max-min+1)+min);
