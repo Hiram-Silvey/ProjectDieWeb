@@ -14,11 +14,11 @@ class Die{
     this._faces = undefined;
   }
   
-  get faces(): Face[]{
+  getFaces(): Face[]{
     return this._faces;
   }
   
-  set faces(faces: Face[]){
+  setFaces(faces: Face[]){
     this._faces = faces;
   }
   

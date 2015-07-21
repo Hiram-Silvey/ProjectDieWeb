@@ -10,27 +10,27 @@ class Artifact {
 		this._description = "";
 	}
 
-	set kind(kind: string) {
+	setKind(kind: string) {
 		this._kind = kind;
 	}
 	
-	get kind(): string {
+	getKind(): string {
 		return this._kind;
 	}
 
-	set name(name: string) {
+	setName(name: string) {
 		this._name = name;
 	}
 
-	get name(): string {
+	getName(): string {
 		return this._name;
 	}
 
-	set description(description: string) {
+	setDescription(description: string) {
 		this._description = description;
 	}
 
-	get description(): string {
+	getDescription(): string {
 		return this._description;
 	}
 

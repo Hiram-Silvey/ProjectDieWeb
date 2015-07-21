@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "../js/",
-		"target": "es5"
+		"outDir": "../js/"
 	},
 	"files": [
 		"artifact.ts",
