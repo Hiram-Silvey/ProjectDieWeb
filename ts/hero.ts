@@ -9,7 +9,7 @@ class Hero extends Artifact {
 
 	constructor() {
 		super();
-		super.setType("Hero");
+		super.kind = "Hero";
 		this._life = 0;
 		this._strength = 0;
 		this._guard = 0;
@@ -18,43 +18,43 @@ class Hero extends Artifact {
 		this._canMove = true;
 	}
 
-	setLife(life: number) {
+	set life(life: number) {
 		this._life = life;
 	}
 	
-	getLife(): number {
+	get life(): number {
 		return this._life;
 	}
 
-	setStrength(strength: number) {
+	set strength(strength: number) {
 		this._strength = strength;
 	}
 
-	getStrength(): number {
+	get strength(): number {
 		return this._strength;
 	}
 
-	setGuard(guard: number) {
+	set guard(guard: number) {
 		this._guard = guard;
 	}
 
-	getGuard(): number {
+	get guard(): number {
 		return this._guard;
 	}
 
-	setCanAttack(canAttack: boolean) {
+	set canAttack(canAttack: boolean) {
 		this._canAttack = canAttack;
 	}
 
-	getCanAttack(): boolean {
+	get canAttack(): boolean {
 		return this._canAttack;
 	}
 
-	setCanMove(canMove: boolean) {
+	set canMove(canMove: boolean) {
 		this._canMove = canMove;
 	}
 
-	getCanMove(): boolean {
+	get canMove(): boolean {
 		return this._canMove;
 	}
 

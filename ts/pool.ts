@@ -22,7 +22,7 @@ class Pool {
 		return false;
 	}
 
-	getPool(): Die[] {
+	get pool(): Die[] {
 		return this._pool;
 	}
 
@@ -30,7 +30,7 @@ class Pool {
 		this._pool.splice(0, this._pool.length);
 	}
 
-	getSize(): number {
+	get size(): number {
 		return this._pool.length;
 	}
 
