@@ -13,7 +13,7 @@ class Grid {
 		this._length = length;
 		this._player1 = player1;
 		this._player2 = player2;
-		this._land = [][];
+		this._land = [];
 		for (var i = 0; i < width; i++) {
 			for (var j = 0; j < length; j++) {
 				this._land[i][j] = new Space(i, j);
@@ -43,16 +43,12 @@ class Grid {
 		return this._player2;
 	}
 
-	getVisibleAt(row: number, col: number): Visible {
+	getVisibleAt(row: number, col: number): VisibleInterface {
 		return this._land[row][col];
 	}
 
-	buildPlatformAt(row: number, col: number, owner: Core) {
-		this._land[row][col] = new Platform(row, col, owner);
-	}
-
-	buildPlatformAt(row: number, col: number, owner: Core, occupant: Artifact) {
-		this._land[row][col] = new Platform(row, col, owner, occupand);
+	buildPlatformAt(row: number, col: number, owner: Core, occupant: Artifact = null) {
+		this._land[row][col] = new Platform(row, col, owner, occupant);
 	}
 
 	removePlatformAt(row: number, col: number) {

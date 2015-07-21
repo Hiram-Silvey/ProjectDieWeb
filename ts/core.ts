@@ -1,11 +1,12 @@
 /// <reference path="references.ts" />
 
-class Core extends VisableClass implements VisibleInterface{
+class Core extends VisibleClass implements VisibleInterface{
 	private _health: number;
 	private _tokens: number[];
 	private _pool: Pool;
 
-	constructor(pool: Pool){
+	constructor(row: number, col: number, pool: Pool){
+		super(row, col);
 		this._health = 3;
 		this._tokens = [0,0,0,0,0];
 		this._pool = pool;
@@ -19,23 +20,23 @@ class Core extends VisableClass implements VisibleInterface{
 		return this._tokens;
 	}
 
-	getMovement(): number[]{
+	getMovement(): number {
 		return this._tokens[0];
 	}
 
-	getAttack(): number[]{
+	getAttack(): number {
 		return this._tokens[1];
 	}
 
-	getDefense(): number[]{
+	getDefense(): number {
 		return this._tokens[2];
 	}
 
-	getSpecial(): number[]{
+	getSpecial(): number {
 		return this._tokens[3];
 	}
 
-	getMaterial(): number[]{
+	getMaterial(): number {
 		return this._tokens[4];
 	}
 
