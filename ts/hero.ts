@@ -1,16 +1,15 @@
 class Hero extends Artifact {
 	
-	private _life: number;
-	private _strength: number;
-	private _guard: number;
+	_life: number;
+	_strength: number;
+	_guard: number;
 
-	private _canAttack: boolean;
-	private _canMove: boolean;
+	_canAttack: boolean;
+	_canMove: boolean;
 
 	constructor() {
+		super();
 		super.setType("Hero");
-		super.setName("");
-		super.setDescription("");
 		this._life = 0;
 		this._strength = 0;
 		this._guard = 0;

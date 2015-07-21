@@ -3,6 +3,8 @@
 		"outDir": "../js/"
 	},
 	"files": [
-		"Artifact.ts"
+		"artifact.ts",
+		"hero.ts",
+		"pool.ts"
 	]
 }
