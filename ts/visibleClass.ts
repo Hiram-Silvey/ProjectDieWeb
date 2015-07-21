@@ -1,4 +1,4 @@
-class VisibleInterface {
+class VisibleClass {
 	
 	private _row: number;
 	private _col: number;
