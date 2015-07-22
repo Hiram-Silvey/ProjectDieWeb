@@ -1,0 +1,14 @@
+body {
+  background-color: #DDDDFF;
+}
+.section {
+  padding: 6rem 0 6rem;
+  background-color: #AAAADD;
+  color: white;
+}
+.header {
+  text-align: center;
+}
+.gamebox {
+  background-color: white;
+}
