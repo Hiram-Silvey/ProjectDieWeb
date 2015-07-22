@@ -1,26 +1,25 @@
 /// <reference path="references.ts" />
 class DieFactory{
 
-  makeDie(json: string): Die{
-    var info = JSON.parse(json);
+  makeDie(json): Die{
     var finalArtifact: Artifact;
-    var kind: string = info.type;
+    var kind: string = json.type;
 
     switch(kind){
       case 'hero':
       var hero: Hero = new Hero();
-      hero.setName(info.name);
-      hero.setDescription(info.description);
-      hero.setLife(info.life);
-      hero.setStrength(info.strength);
-      hero.setGuard(info.guard);
+      hero.setName(json.name);
+      hero.setDescription(json.description);
+      hero.setLife(json.life);
+      hero.setStrength(json.strength);
+      hero.setGuard(json.guard);
       finalArtifact = hero;
       break;
 
       case 'Artifact':
       var artifact: Artifact = new Artifact();
-      artifact.setName(info.name);
-      artifact.setDescription(info.description);
+      artifact.setName(json.name);
+      artifact.setDescription(json.description);
       finalArtifact = artifact;
       break;
 
@@ -29,8 +28,8 @@ class DieFactory{
     }
 
     var faces: Face[] = [null,null,null,null,null,null];
-    for(var i = 0; i < info.faces; i++){
-      var temp: string = info.faces[i];
+    for(var i = 0; i < json.faces; i++){
+      var temp: string = json.faces[i];
       faces[i] = Face[temp];
     }
 

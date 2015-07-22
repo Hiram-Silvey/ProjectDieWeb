@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "../js/"
+		"out": "../js/oneTrueGod.js"
 	},
 	"files": [
 		"artifact.ts",
@@ -13,6 +13,7 @@
 		"core.ts",
 		"space.ts",
 		"platform.ts",
-		"grid.ts"
+		"grid.ts",
+		"testingUnit.ts"
 	]
 }
